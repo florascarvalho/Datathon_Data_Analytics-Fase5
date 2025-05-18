@@ -3,6 +3,6 @@ PyMuPDF==1.23.20
 numpy>=1.25
 pandas==2.2.3
 joblib==1.3.2
-scikit-learn==1.2.2
+scikit-learn==1.3.2
 sentence-transformers==2.2.2
 gensim==4.3.2
