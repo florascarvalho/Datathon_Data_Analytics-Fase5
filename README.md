@@ -15,6 +15,7 @@ E são determinados através de uma pontuação atribuída para o currículo do 
 <h3>Arquivos neste diretório do Github</h3>
 
    <li><a href="https://github.com/florascarvalho/Datathon_Data_Analytics-Fase5/tree/main/OneDrive/Documentos/GitHub/Postech_Data-Analytics_Datathon_Fase5">OneDrive/Documentos/GitHub/Postech_Data-Analytics_Datathon_Fase5</a>: Bases de dados compactadas que foram disponibilizadas e utilizadas para o modelo
+   <li><a href="https://github.com/florascarvalho/Datathon_Data_Analytics-Fase5/tree/main/Apresenta%C3%A7%C3%A3o">Apresentação</a>: Arquivo utilizado no vídeo de apresentação gerencial
 
 <h2></h2> 
 <h3>Streamlit</h3>
