@@ -14,4 +14,4 @@ Considerando o histórico e a base de dados compartilhada, foi desenvolvido um m
 
 """)
 
-st.sidebar.success("🎓Aluna: Flora Serafim de Carvalho | RM: RM354000")
+st.sidebar.success("🎓Aluna: Flora Serafim de Carvalho | RM: 354000")
