@@ -2,12 +2,11 @@ import streamlit as st
 
 
 st.title("Datathon - Fase 05")
-
+st.subheader("""
+Aluna: Flora Serafim de Carvalho | RM: RM354000
+""")
 
 st.header("Objetivo", divider="gray")
-st.subheader("""
-### Aluna: Flora Serafim de Carvalho | RM: RM354000
-""")
 
 st.write("""
 Desenvolver uma solução de IA para a melhoria do recrutamento da empresa Decision, otimizando o tempo do processo seletivo e a assertividade na contratação. 
