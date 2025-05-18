@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title("Datathon - Fase 05")
 st.subheader("""
-Aluna: Flora Serafim de Carvalho | RM: RM354000
+Aluna: Flora Serafim de Carvalho | RM: 354000
 """)
 
 st.header("Objetivo", divider="gray")
