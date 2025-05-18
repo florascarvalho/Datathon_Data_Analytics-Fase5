@@ -16,11 +16,11 @@ E são determinados através de uma pontuação atribuída para o currículo do 
 <ul>
    <li><a href="https://github.com/florascarvalho/Datathon_Data_Analytics-Fase5/tree/main/OneDrive/Documentos/GitHub/Postech_Data-Analytics_Datathon_Fase5">OneDrive/Documentos/GitHub/Postech_Data-Analytics_Datathon_Fase5</a>: Bases de dados compactadas que foram disponibilizadas e utilizadas para o modelo
 </ul>
-
+<h2></h2> 
 <h3>Streamlit</h3>
 <ul>
 </ul>
-
+<h2></h2> 
 <h3>Youtube</h3>
 <ul>
 </ul>
