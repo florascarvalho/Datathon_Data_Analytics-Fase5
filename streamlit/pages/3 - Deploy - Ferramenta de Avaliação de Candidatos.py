@@ -2,7 +2,7 @@ import streamlit as st
 import fitz  # PyMuPDF
 import numpy as np
 import pandas as pd
-import joblib
+from tensorflow.keras.models import load_model
 
 # Carregar recursos do modelo
 from Ferramenta_Recrutamento_Datathon_FIAP_FASE_05 import prever_candidato, encoder_academico, encoder_ingles, encoder_espanhol, scaler, model
