@@ -20,8 +20,9 @@ with st.form("formulario_candidato"):
     cursos = st.text_area("Cursos Complementares")
 
     nivel_academico = st.radio("Nível Acadêmico", ["Doutorado Completo", "Doutorado Cursando", "Doutorado Incompleto", "Ensino Fundamental Completo", "Ensino Fundamental Cursando", "Ensino Fundamental Incompleto", "Ensino Médio Completo", "Ensino Médio Cursando", "Ensino Médio Incompleto", "Ensino Superior Completo", "Ensino Superior Cursando", "Ensino Superior Incompleto", "Ensino Técnico Completo", "Ensino Técnico Cursando", "Ensino Técnico Incompleto", "Mestrado Completo", "Mestrado Cursando", "Mestrado Incompleto", "Pós Graduação Completo", "Pós Graduação Cursando", "Pós Graduação Incompleto"])
-    nivel_ingles = st.selectbox("Inglês", ["Básico", "Intermediário", "Avançado", "Fluente"])
-    nivel_espanhol = st.selectbox("Espanhol", ["Básico", "Intermediário", "Avançado", "Fluente"])
+    nivel_ingles = st.selectbox("Inglês", ["", "Básico", "Intermediário", "Avançado", "Fluente"])
+    nivel_espanhol = st.selectbox("Espanhol", ["", "Básico", "Intermediário", "Avançado", "Fluente"])
+
 
     uploaded_pdf = st.file_uploader("Currículo em PDF", type=["pdf"])
 
