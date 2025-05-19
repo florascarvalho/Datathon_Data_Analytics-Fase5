@@ -50,3 +50,5 @@ if submitted:
     with st.spinner("Analisando perfil..."):
         resultado = prever_candidato(candidato_dict)
         st.success(f"Resultado para {candidato}: {resultado}")
+        
+st.sidebar.success("🎓Aluna: Flora Serafim de Carvalho | RM: 354000")
