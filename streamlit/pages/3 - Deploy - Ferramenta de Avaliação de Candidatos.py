@@ -19,7 +19,7 @@ with st.form("formulario_candidato"):
     certificacoes = st.text_area("Certificações")
     cursos = st.text_area("Cursos Complementares")
 
-    nivel_academico = st.selectbox("Nível Acadêmico", ["Fundamental", "Médio", "Técnico", "Graduação", "Pós-graduação", "Mestrado", "Doutorado"])
+    nivel_academico = st.text_input("Nível Acadêmico")
     nivel_ingles = st.selectbox("Inglês", ["Básico", "Intermediário", "Avançado", "Fluente"])
     nivel_espanhol = st.selectbox("Espanhol", ["Básico", "Intermediário", "Avançado", "Fluente"])
 
