@@ -4,8 +4,8 @@ import joblib
 from gensim.models import FastText
 
 # Carregar modelo treinado
-from tensorflow.keras.models import load_model
-model = load_model("modelo/modelo_mlp.h5")
+import joblib
+model = joblib.load("modelo/modelo_treinado.joblib") 
 scaler = joblib.load("modelo/scaler.joblib")
 ft_model = FastText.load("modelo/fasttext.model")
 
