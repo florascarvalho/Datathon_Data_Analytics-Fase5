@@ -29,10 +29,25 @@ def prever_candidato(candidato_dict):
     tokenized = texto.split()
     texto_ft = document_vector(tokenized).reshape(1, -1)
 
+    nivel_academico = candidato_dict.get("nivel_academico", "")
+    nivel_ingles = candidato_dict.get("nivel_ingles", "")
+    nivel_espanhol = candidato_dict.get("nivel_espanhol", "")
+
+   
+    if nivel_academico not in encoder_academico.classes_:
+        nivel_academico = encoder_academico.classes_[0]  # ou exiba mensagem de aviso
+
+    if nivel_ingles not in encoder_ingles.classes_:
+        nivel_ingles = encoder_ingles.classes_[0]
+
+    if nivel_espanhol not in encoder_espanhol.classes_:
+        nivel_espanhol = encoder_espanhol.classes_[0]
+
     try:
         nivel_academico = encoder_academico.transform([candidato_dict.get("nivel_academico", "")])[0]
         nivel_ingles = encoder_ingles.transform([candidato_dict.get("nivel_ingles", "")])[0]
         nivel_espanhol = encoder_espanhol.transform([candidato_dict.get("nivel_espanhol", "")])[0]
+        
     except Exception as e:
         return f"Erro ao codificar os atributos estruturados: {e}"
 
