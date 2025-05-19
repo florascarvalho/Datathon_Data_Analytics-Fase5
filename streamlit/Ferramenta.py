@@ -1,25 +1,20 @@
 import numpy as np
-from sklearn.preprocessing import LabelEncoder, StandardScaler
 import joblib
 from gensim.models import FastText
 
-# Carregar modelo treinado
-import joblib
-model = joblib.load("modelo/modelo_treinado.joblib") 
-scaler = joblib.load("modelo/scaler.joblib")
-ft_model = FastText.load("modelo/fasttext.model")
+# Carregar recursos
+model = joblib.load("streamlit/pages/modelo_treinado.joblib")
+scaler = joblib.load("streamlit/pages/scaler.joblib")
+ft_model = FastText.load("streamlit/pages/fasttext.model")
 
-# Encoders treinados
-encoder_academico = joblib.load("modelo/encoder_academico.joblib")
-encoder_ingles = joblib.load("modelo/encoder_ingles.joblib")
-encoder_espanhol = joblib.load("modelo/encoder_espanhol.joblib")
+encoder_academico = joblib.load("streamlit/pages/encoder_academico.joblib")
+encoder_ingles = joblib.load("streamlit/pages/encoder_ingles.joblib")
+encoder_espanhol = joblib.load("streamlit/pages/encoder_espanhol.joblib")
 
-# Função para vetorizar texto com FastText
 def document_vector(doc):
     words = [word for word in doc if word in ft_model.wv]
     return np.mean([ft_model.wv[word] for word in words], axis=0) if words else np.zeros(ft_model.vector_size)
 
-# Função principal de previsão
 def prever_candidato(candidato_dict):
     texto = " ".join([
         candidato_dict.get("experiencias", ""),
@@ -28,7 +23,6 @@ def prever_candidato(candidato_dict):
         candidato_dict.get("cursos", "")
     ])
 
-    # Se texto principal estiver vazio, usar cv_pt
     if not texto.strip():
         texto = candidato_dict.get("cv_pt", "")
 
