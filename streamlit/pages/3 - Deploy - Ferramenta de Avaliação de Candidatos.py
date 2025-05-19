@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # Carregar recursos do modelo
-from streamlit.Ferramenta import prever_candidato, encoder_academico, encoder_ingles, encoder_espanhol, scaler, model
+from streamlit.Ferramenta_Recrutamento_Datathon_FIAP_FASE_05 import prever_candidato, encoder_academico, encoder_ingles, encoder_espanhol, scaler, model
 
 st.set_page_config(page_title="Análise de Candidato", layout="centered")
 st.title("📋 Ferramenta de Avaliação de Candidatos")
