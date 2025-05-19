@@ -21,7 +21,7 @@ with abas[0]:  # Primeira aba
     uma camada de entrada, uma ou mais camadas ocultas e uma camada de saída. Cada neurônio de uma camada está conectado a todos os neurônios da próxima camada.
     """) 
     # URL da imagem no GitHub 
-    image_url_1 = "https://raw.githubusercontent.com/florascarvalho/Datathon_Data_Analytics-Fase5/blob/main/streamlit/imagens/Modelo%20MLP.jpg"
+    image_url_1 = "https://raw.githubusercontent.com/florascarvalho/Datathon_Data_Analytics-Fase5/main/streamlit/imagens/Modelo%20MLP.jpg"
     # Exibindo a imagem
     st.image(image_url_1, caption="Modelo Esquemático de uma rede MLP", use_container_width =True)  
 
@@ -30,7 +30,7 @@ with abas[0]:  # Primeira aba
     transmitir o sinal para os próximos neurônios. Pode ser visualizado no trecho abaixo:
     """)
 
-    image_url_2 = "https://raw.githubusercontent.com/florascarvalho/Datathon_Data_Analytics-Fase5/blob/main/streamlit/imagens/Script%20MLP_Keras.jpg"
+    image_url_2 = "https://raw.githubusercontent.com/florascarvalho/Datathon_Data_Analytics-Fase5/main/streamlit/imagens/Script%20MLP_Keras.jpg"
     st.image(image_url_2, caption="Modelo Esquemático de uma rede MLP", use_container_width =True) 
 
     st.write("""
