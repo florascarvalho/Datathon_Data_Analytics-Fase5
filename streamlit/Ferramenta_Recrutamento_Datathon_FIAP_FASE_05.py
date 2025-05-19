@@ -3,13 +3,13 @@ import joblib
 from gensim.models import FastText
 
 # Carregar recursos
-model = joblib.load("streamlit/pages/modelo_treinado.joblib")
-scaler = joblib.load("streamlit/pages/scaler.joblib")
-ft_model = FastText.load("streamlit/pages/fasttext.model")
+model = joblib.load("modelo/modelo_treinado.joblib")
+scaler = joblib.load("modelo/scaler.joblib")
+ft_model = FastText.load("modelo/fasttext.model")
 
-encoder_academico = joblib.load("streamlit/pages/encoder_academico.joblib")
-encoder_ingles = joblib.load("streamlit/pages/encoder_ingles.joblib")
-encoder_espanhol = joblib.load("streamlit/pages/encoder_espanhol.joblib")
+encoder_academico = joblib.load("modelo/encoder_academico.joblib")
+encoder_ingles = joblib.load("modelo/encoder_ingles.joblib")
+encoder_espanhol = joblib.load("modelo/encoder_espanhol.joblib")
 
 def document_vector(doc):
     words = [word for word in doc if word in ft_model.wv]
