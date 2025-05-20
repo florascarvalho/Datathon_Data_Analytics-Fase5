@@ -22,7 +22,7 @@ E são determinados através de uma pontuação atribuída para o currículo do 
 
 <h2></h2> 
 <h3>Streamlit</h3>
-
+  <li><a href="https://datathon-data-analytics-fase5-rm354000.streamlit.app/">Link da aplicação no Streamlit</a>
 <h2></h2> 
 <h3>Youtube</h3>
 
