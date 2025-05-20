@@ -18,7 +18,7 @@ with abas[0]:  # Primeira aba
     """)
 
     image_url_1 = "https://raw.githubusercontent.com/florascarvalho/Datathon_Data_Analytics-Fase5/main/streamlit/imagens/Modelo%20MLP.jpg"
-    st.image(image_url_1, caption="Modelo Esquemático de uma rede MLP", use_container_width=True)  
+    st.image(image_url_1, caption="Modelo Esquemático de uma rede MLP")  
 
     st.write("""
     Em nosso modelo, o MLP foi criado utilizando a biblioteca Keras, na qual cada neurônio combina dados de entrada com pesos diferentes, aplica uma função ReLU para
@@ -26,7 +26,7 @@ with abas[0]:  # Primeira aba
     """)
 
     image_url_2 = "https://raw.githubusercontent.com/florascarvalho/Datathon_Data_Analytics-Fase5/main/streamlit/imagens/Script%20MLP_Keras.jpg"
-    st.image(image_url_2, caption="Script MLP com Keras", use_container_width=True) 
+    st.image(image_url_2, caption="Script MLP com Keras") 
 
     st.write("""
     Para o treinamento, foi utilizado 20%% dos dados da base. No processo é utilizada a técnica de retropropagação, ajustando assim os pesos com base no erro da previsão.       
